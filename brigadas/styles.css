@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.benito img {
+    width: 300px; 
+    height: 90px; 
+}
+
+/* Header Styles */
+.header {
+    background-color: #6b1b30;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section Styles */
+section {
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Brigadas Styles */
+.brigadas {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.brigada {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.brigada h3 {
+    margin-top: 0;
+}
+
+.brigada p {
+    margin: 5px 0;
+}
+
+.brigada .btn {
+    background-color: #800000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.brigada .btn:hover {
+    background-color: #660000;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #6b1b30;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container img {
+    width: 300px;
+    height: 90px;
+}
+
+.footer a {
+    color: #fff;
+}
