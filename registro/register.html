@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <header class="header-container">
+        <img src="/img/logo.png" alt="Logotipo" class="logo">
+    </header>
+    <div class="container">
+        <form id="registerForm" class="form" onsubmit="return registerUser(event)">
+            <h2>Registrarse</h2>
+            <input type="email" name="email" id="registerEmail" placeholder="Correo Electrónico" required>
+            <br>
+            <input type="password" name="password" id="registerPassword" placeholder="Contraseña" required>
+            <br>
+            <button type="submit">Registrarse</button>
+            <p>¿Ya tienes una cuenta? <a href="/inicio de sesion/login.html">Inicia Sesión</a></p>
+        </form>
+    </div>
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/img/logo.png" alt="Logo Benito Juárez">
+            </div>
+            <p><strong>Municipio de Benito Juárez</strong></p>
+            <p>Dirección: Palacio Municipal, Av. Tulum No. 5, Sm. 5, C.P. 77500, Benito Juárez, Quintana Roo</p>
+            <p>Teléfono: (998) 881-2800</p>
+            <p>&copy; 2024 PETCARE. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        async function registerUser(event) {
+            event.preventDefault(); // Evita el envío del formulario
+            
+            const email = document.getElementById('registerEmail').value;
+            const password = document.getElementById('registerPassword').value;
+
+            try {
+                const response = await fetch('users.json');
+                const data = await response.json();
+
+                const userExists = data.users.find(user => user.email === email);
+
+                if (userExists) {
+                    alert('Este correo ya está registrado. Por favor, inicie sesión.');
+                } else {
+                    data.users.push({ email, password });
+
+                    await fetch('users.json', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(data)
+                    });
+
+                    alert('Registro exitoso. Ahora puede iniciar sesión.');
+                    window.location.href = '/inicio de sesion/login.html'; // Redirige a la página de inicio de sesión
+                }
+            } catch (error) {
+                console.error('Error al leer o escribir el archivo JSON:', error);
+                alert('Hubo un problema con el registro. Por favor, inténtelo de nuevo.');
+            }
+        }
+    </script>
+</body>
+</html>

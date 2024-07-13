@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <header class="header-container">
+        <img src="/img/logo.png" alt="Logotipo" class="logo">
+        <p>PETCARE</p>
+    </header>
+    <div class="container">
+        <form id="loginForm" class="form">
+            <h2>Iniciar Sesión</h2>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <br>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <br>
+            <button type="button" onclick="redirectToHome()">Iniciar Sesión</button>
+            <p>¿No tienes una cuenta? <a href="/registro/register.html">Regístrate</a></p>
+        </form>
+    </div>
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/img/logo.png" alt="Logo Benito Juárez">
+            </div>
+            <p><strong>Municipio de Benito Juárez</strong></p>
+            <p>Dirección: Palacio Municipal, Av. Tulum No. 5, Sm. 5, C.P. 77500, Benito Juárez, Quintana Roo</p>
+            <p>Teléfono: (998) 881-2800</p>
+            <p>&copy; 2024 PETCARE. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        function redirectToHome() {
+            window.location.href = '/home/index.html';
+        }
+    </script>
+</body>
+</html>
+

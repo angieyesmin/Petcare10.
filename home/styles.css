@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.benito img{
+    width: 300px; 
+    height: 90px; 
+}
+
+/* Header Styles */
+.header {
+    background-color: #6b1b30;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header h1 {
+    margin: none;
+    text-align:center;
+    margin-bottom: 3rem;
+}
+
+.header nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section Styles */
+section {
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section p {
+    text-align: justify;
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #6b1b30;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.container img{
+    width: 300px; 
+    height: 90px; 
+}
+.footer a{
+    color:#fff ;
+}

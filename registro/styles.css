@@ -1,0 +1,106 @@
+/* Normalización básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+}
+
+/* Estilo del encabezado */
+.header-container {
+    background-color: #6b1b30; /* Color de fondo del encabezado */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-container .logo {
+    width: 200px;
+    height: auto;
+}
+
+/* Estilo del formulario */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 140px); /* Altura mínima restando el espacio del encabezado y pie de página */
+}
+
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+    color: #6b1b30;
+}
+
+.form input[type="email"],
+.form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form button {
+    background-color: #6b1b30;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form button:hover {
+    background-color: #6b1b30;
+}
+
+.form p {
+    margin-top: 10px;
+}
+
+.form a {
+    color: #6b1b30;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del pie de página */
+.footer-container {
+    background-color: #6b1b30;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-container .footer-logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+

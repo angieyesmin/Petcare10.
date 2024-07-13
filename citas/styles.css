@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.benito img{
+    width: 300px; 
+    height: 90px; 
+}
+
+/* Header Styles */
+.header {
+    background-color: #6b1b30;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header h1 {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Appointment Section Styles */
+.appointment {
+    background-color: #fff;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+.appointment h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.appointment-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.appointment-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.appointment-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #6b1b30;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.container img{
+    width: 300px; 
+    height: 90px; 
+}
+.footer a{
+    color:#fff ;
+}
